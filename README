@@ -1,0 +1,7 @@
+A test-suite for the uCini library
+
+Uses uCini as a submodule from http://subogero.dyndns.org/git/uCini.git
+Shows an example mapping for all internal data types.
+First dumps all internal data to stdout,
+then reads input from stdin in ini format,
+then dumps the changed internal data to stdout again.
