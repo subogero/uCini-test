@@ -4,10 +4,10 @@
 
 // Internal data
 char foo = -1;
-unsigned char ufoo = -2;
-short bar = -3;
-unsigned short ubar = 1;
-long baz = 2;
+short bar = -2;
+long baz = -3;
+unsigned char ufoo = 1;
+unsigned short ubar = 2;
 unsigned long ubaz = 3;
 char spam[80] = "Master Foo";
 char eggs = 0xFF;
@@ -56,11 +56,11 @@ static void rw_egg2(char* str, int write)
 
 int main(void)
 {
-  printf("Original data\n-------------\n");
+  printf("\nOriginal data\n-------------\n");
   uCiniDump(&ini, NULL);
-  printf("Enter inifile\n-------------\n");
+  printf("\nEnter inifile\n-------------\n");
   uCiniParse(&ini, NULL);
-  printf("Modified data\n-------------\n");
+  printf("\nModified data\n-------------\n");
   uCiniDump(&ini, NULL);
 }
 

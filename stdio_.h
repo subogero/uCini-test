@@ -1,6 +1,8 @@
-#ifndef stdio__
-#define stdio__
+#ifndef __stdio_
+#define __stdio_
 
+#include <stdio.h>
+#define MAX_LINE_LENGTH 80
 #define FILE_ FILE
 #define fopen_ fopen
 #define fclose_ fclose

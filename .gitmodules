@@ -1,0 +1,3 @@
+[submodule "uCini"]
+	path = uCini
+	url = http://subogero.dyndns.org/git/uCini.git
