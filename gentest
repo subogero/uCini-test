@@ -1,0 +1,8 @@
+;root
+[general]; general
+foo=1; &foo; u1
+bar=2; &bar; s2
+baz=3; &baz; s4
+[python]; python
+spam=spamspamspam; spam; str
+eggs=y; &egg; b0
