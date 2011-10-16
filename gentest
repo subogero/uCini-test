@@ -1,8 +1,14 @@
-;root
-[general]; general
-foo=1; &foo; u1
-bar=2; &bar; s2
-baz=3; &baz; s4
-[python]; python
-spam=spamspamspam; spam; str
-eggs=y; &egg; b0
+;ini
+[signed]; si
+foo=; &foo; s1
+bar=; &bar; s2
+baz=; &baz; s4
+[unsigned]; ui
+ufoo=; &ufoo; u1
+ubar=; &ubar; u2
+ubaz=; &ubaz; u4
+[exotic]; ex
+spam=; spam; str
+egg0=; &eggs; b0
+egg1=; &eggs; b1
+egg2=; rw_egg2; fun

@@ -16,32 +16,7 @@ char eggs = 0xFF;
 #define EGG2 2
 static void rw_egg2(char* str, int write);
 
-static const struct tEntry si[] = {
-  { "foo", &foo, 1 + eType_INT + eType_SGND },
-  { "bar", &bar, 2 + eType_INT + eType_SGND },
-  { "baz", &baz, 4 + eType_INT + eType_SGND },
-};
-static const struct tEntry ui[] = {
-  { "ufoo", &ufoo, 1 + eType_INT },
-  { "ubar", &ubar, 2 + eType_INT },
-  { "ubaz", &ubaz, 4 + eType_INT },
-};
-static const struct tEntry ex[] = {
-  { "spam", spam, eType_SZ },
-  { "egg0", &eggs, 0 + eType_FLAG },
-  { "egg1", &eggs, 1 + eType_FLAG },
-  { "egg2", rw_egg2, eType_FUNC },
-};
-
-static const struct tSection sect[] = {
-  { "signed"  , si, sizeof(si) / sizeof(struct tEntry) },
-  { "unsigned", ui, sizeof(ui) / sizeof(struct tEntry) },
-  { "exotic"  , ex, sizeof(ex) / sizeof(struct tEntry) },
-};
-
-static const struct tIni ini = {
-  sect, sizeof(sect) / sizeof(struct tSection) 
-};
+#include "ini_map.h"
 
 static void rw_egg2(char* str, int write)
 {
