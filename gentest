@@ -7,6 +7,8 @@ baz=; &baz; s4
 ufoo=; &ufoo; u1
 ubar=; &ubar; u2
 ubaz=; &ubaz; u4
+ubazze=; line_shall_be_unrecognized, u2
+uwazz=;  invalid_type; u5
 [exotic]; ex
 spam=; spam; str
 egg0=; &eggs; b0
