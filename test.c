@@ -37,6 +37,5 @@ int main(void)
   uCiniParse(&ini, NULL);
   printf("\nModified data\n-------------\n");
   uCiniDump(&ini, NULL);
+  return 0;
 }
-
-
