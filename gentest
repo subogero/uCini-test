@@ -15,3 +15,6 @@ egg0=; &eggs; b0
 egg1=; &eggs; b1
 egg2=; rw_egg2; fun
 legdurvabb=;&foobar;foobar
+foobarfoo=; rw_foobar_foo; fun
+foobarbar=; foobar.bar; sym
+foobarbaz=; foobar.baz; sym

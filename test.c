@@ -14,7 +14,14 @@ char eggs = 0xFF;
 #define EGG0 0
 #define EGG1 1
 #define EGG2 2
+struct {
+  int foo: 1;
+  int bar: 2;
+  int baz: 6;
+} foobar;
+
 static void rw_egg2(char* str, int write);
+static void rw_foobar_foo(char* str, int write);
 
 #include "ini_map.h"
 
@@ -26,6 +33,17 @@ static void rw_egg2(char* str, int write)
   else {
     if      (!strcmp(str, "yes")) SET(eggs, EGG2);
     else if (!strcmp(str, "no" )) CLR(eggs, EGG2);
+  }
+}
+
+static void rw_foobar_foo(char* str, int write)
+{
+  if (write) {
+    scatd(str, foobar.foo);
+  }
+  else {
+    long num;
+    if (sscand(str, &num)) foobar.foo = num;
   }
 }
 
